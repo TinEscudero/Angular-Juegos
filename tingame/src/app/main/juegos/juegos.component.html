@@ -1,0 +1,9 @@
+<div class = "planetas">
+<div *ngFor = "let planeta of memo">
+    <img class="planeta1" *ngIf="planeta.cartaseleccionada" src="{{planeta.img}}" alt=""/>
+    <img class="planeta2" *ngIf="planeta.cartaconfirmada" src="/assets/tick.svg" alt=""/>
+    <img class="planeta3" (click)="onclick(planeta)" *ngIf="!planeta.cartaseleccionada && !planeta.cartaconfirmada" src="/assets/universe.svg" alt=""/>
+ </div>
+ 
+</div>
+

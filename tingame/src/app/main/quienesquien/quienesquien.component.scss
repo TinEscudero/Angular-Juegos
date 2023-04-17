@@ -1,0 +1,68 @@
+
+.selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    margin-right: 10px;
+    width: 100%;
+    max-width: 200px;
+    background-color: #f2f2f2;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  select:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  input[type=number] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 200px;
+    font-family: 'Roboto', sans-serif;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  input[type=number]:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .change {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+  }

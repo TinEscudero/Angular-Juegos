@@ -1,0 +1,35 @@
+<!-- <div>
+    <p>tiempo: {{contador}}</p>
+    <button (click) ="empezar()">START</button>
+</div>
+
+
+<div class="tablero">
+   <div *ngFor="let fila of tablero; let i = index ">
+    <div  *ngFor="let columna of fila; let i = index ">
+      <img  src="{{columna}}"alt="">
+   </div>
+</div> -->
+<!-- <img src="../../../assets/tierra.png" -->
+
+
+
+<div class="timer">
+   <p >Tiempo:{{contador}}</p>
+</div>
+<div class="puntos">
+   <p >Puntos:{{puntos}}</p>
+</div>
+<div class="boton">
+   <button  (click)="starting()">Start</button>
+</div>
+
+
+<div class="tablero">
+   <div class="fila" *ngFor="let fila of fils; let f = index">
+       <div class="columna" *ngFor=" let column of columns; let c = index">
+           <img *ngIf="diglet" src="{{imgDiglet}}" />
+           <img [src]="imageSrc[f][c]" (click)="sumar(f,c)"/>
+       </div>
+   </div>
+</div>

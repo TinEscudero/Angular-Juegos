@@ -1,0 +1,18 @@
+
+<label for="filas">Número de filas:</label>
+<input type="number" id="filas" [(ngModel)]="filas">
+
+<label for="columnas">Número de columnas:</label>
+<input type="number" id="columnas" [(ngModel)]="columnas">
+
+<button (click)="pintarTabla($event)">Crear tablas</button>
+
+<div *ngIf="tabla">
+    <table>
+        <tr *ngFor="let fila of filasArray; let i = index">
+            <td *ngFor="let columna of columnasArray; let j = index">
+                <div><img [src]="imagenSrc[i][j]" (click)="voltearImagen(i, j)"></div>
+            </td>
+        </tr>
+    </table>
+</div>

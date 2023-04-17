@@ -1,0 +1,48 @@
+
+  .tablero {
+    display: flex;
+   justify-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+  }
+
+  .columna {
+    position: relative;
+  }
+
+  .columna img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .columna img.diglet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .boton {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .boton button {
+    padding: 10px 20px;
+    background-color:  #ff9b04;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .puntos,
+  .timer {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px auto;
+  }

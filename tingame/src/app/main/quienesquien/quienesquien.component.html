@@ -1,0 +1,13 @@
+<div class="selector"> 
+    <select [(ngModel)]= "seleccion" (change)= "changeMoneda($event)" >
+    <option *ngFor ="let i of divisa" [value]= "i.name" >{{i.name}}</option>
+</select>
+</div>
+<div class="cont">
+<div class="container">
+    <input type= "number" [(ngModel)]= "change">
+    <div *ngFor= "let item of divisa">
+      <div class="name">{{item.name}}</div>
+        <div class="change">{{(item.value * change).toFixed(3)}}</div>
+ </div></div>
+</div>

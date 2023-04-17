@@ -1,0 +1,49 @@
+.planetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .planeta1 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    margin: 10px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .planeta2 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #0f0;
+    margin: 10px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .planeta3 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    margin: 10px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
